@@ -31,7 +31,7 @@ Label_12:            jmp Label_0 ; desvia para uma função
                      nop 
                     
                      nop 
-                     sbc r0, r0 
+                     sbc r0, r0 ; subtrai 1 no registro da flag
                      muls r16, r16 
                      
                      mulsu r16, r16 
