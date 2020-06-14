@@ -94,7 +94,7 @@ Label_5:             cpi r26, 0x95
                      ldi r29, 0x00 
                      rjmp Label_7 
 Label_9:             sbiw r29:r28, 0x01 
-                     movw r31:r30, r29:r28 
+                     movw r31:r30, r29:r28 ; copia o primeiro operando para o segundo
                      call Label_8 
 Label_7:             cpi r28, 0x61 
                      cpc r29, r17 
