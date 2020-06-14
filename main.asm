@@ -35,7 +35,7 @@ Label_12:            jmp Label_0 ; desvia para uma função
                      muls r16, r16 
                      
                      mulsu r16, r16 
-                     cpc r16, r20 
+                     cpc r16, r20 ; compara os valores dos registradores
                      nop 
                      nop 
                      nop 
@@ -80,7 +80,7 @@ Label_4:             lpm r0, Z+
                      st X+, r0 
 Label_3:             cpi r26, 0x6E 
                      cpc r27, r17 
-                     brne Label_4 
+                     brne Label_4 ; funciona como um else caso a comparação não de igual
                      ldi r18, 0x01 
                      ldi r26, 0x6E 
                      ldi r27, 0x01 
@@ -117,7 +117,7 @@ Label_76:            push r12
                      ldi r29, 0x00 
 Label_15:            cp r28, r14 
                      cpc r29, r15 
-                     breq Label_13 
+                     breq Label_13 ; funciona como um if comparando se os valores são iguais
                      movw r27:r26, r17:r16 
                      ld r22, X+ 
                      movw r17:r16, r27:r26 
@@ -147,7 +147,7 @@ Label_13:            movw r25:r24, r15:r14
                      ret 
 Label_39:            ldi r25, 0x00 
                      movw r31:r30, r25:r24 
-                     subi r30, 0x84 
+                     subi r30, 0x84; faz a subtração dos registros
                      sbci r31, 0xFF 
                      lpm r19, Z 
                      movw r31:r30, r25:r24 
