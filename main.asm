@@ -1,4 +1,4 @@
-Label_12:            jmp Label_0 
+Label_12:            jmp Label_0 ; jmp - um desvio para o Label
                      jmp Label_1 
                      jmp Label_1 
                      jmp Label_1 
